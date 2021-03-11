@@ -1,0 +1,28 @@
+Titlul temei: Cazarea studenților în căminele universitare pe perioada ciclului universitar
+
+Specificatii: 
+
+Studentii sunt identificati in mod unic prin numar matricol (format din 4 cifre) si au caracteristici: nume, adresa de domiciliu, localitate, judet si la ce facultate este inscris, e-mail, numar de telefon de contact, iar cazarea se face in functie de un punctaj calculat (cu valori 0-110).
+Un student poate avea cazuri speciale: adeverinta medicala (care poate determina scutirea integrala a platii), situatie familiala - deces, parinti in invatamant (care poate determina scutirea integrala a platii), poate face parte dintr-o organizatie recunoscuta de universitate, ceea ce poate determina scutirea integrala a platii.
+Un student poate fi identificat in mod unic si prinnumarul de telefon care este obligatoriu.
+
+Facultatile sunt identificate printr-un cod (AC, ETTI, ETH etc), o denumire si o adresa.
+
+Caminele sunt identificate printr-un cod (T1, T2, ..., T21 etc.), au o adresa si un administrator, care poate fi aceleasi la mai multe camine, un camin avand un singur administrator. Un administrator poate fi contactat la un numar de telefon si e-mail.
+Fiecare camin are un numar clar stabilit de camere.
+
+Camerele apartin unui camin, sunt identice (cu exceptia oficiilor), au aceleasi facilitati si acelasi pret de cazare.
+
+Acte - ex. contract de inchiriere incheiat cu fiecare student, copie de pe carte de identitate  + acte doveditoare in cazul scutirii la plata
+
+Punctaje - fiecarui student i se calculeaza un punctaj in functie de medie,numarul de credite, anul de studiu si situatiile date de diferite bonusuri;
+Formula de calcul a punctajelor pentru studentii de anul 2+ este: punctaj_total=medie_student * (numar_credite*10/(60.0*(an_studiu-1)))+  (bonus));
+Formula de calcul a punctajelor pentru studentii de anul 1 este: punctaj_total=medie_student * 10;
+(Aceste formule de calcul nu reprezinte cu exactitate formula reala de calcul insa se apropie de aceasta foarte mult. Acest artificiu se va face deoarece in mod contrar schema s-ar complica cu alte tabele.)
+
+Punctajul determina ordinea in care vor fi luate in considerare optiunile.
+Se considera punctajul pentru un an un universitar calculat in functie de formula de mai sus.
+
+Optiuni - reprezinta dorinta unui student de a sta intr-un anumit camin, intr-o anumita camera si cu anumiti colegi;
+
+
